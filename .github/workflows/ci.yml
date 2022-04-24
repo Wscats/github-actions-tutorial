@@ -13,7 +13,7 @@ jobs:
         persist-credentials: false
     - name: Install and Build
       run: |
-        npm install
+        SKIP_PREFLIGHT_CHECK=true && npm install
         npm run-script build
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
