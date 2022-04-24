@@ -3,14 +3,24 @@
 
 name: Node.js Package
 
+# 触发工作流程的事件
 on:
   push:
+    branches:
+      - main
+      - "releases/**"
+      - "!releases/**-alpha"
+      - dev
+  pull_request:
     branches:
       - main
       - "releases/**"
       - dev
   release:
     types: [created]
+
+# 权限
+permissions: write-all
 
 jobs:
   publish-gpr:
