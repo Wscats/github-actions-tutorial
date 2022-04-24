@@ -37,7 +37,7 @@ jobs:
       # - name: Global install Yarn 🔨
       #   run: npm install -g yarn
 
-      # # 安装依赖
+      # 安装依赖，相当于 npm ci
       - name: Install dependencies 📦️
         run: npm install
       # 执行构建步骤
