@@ -15,18 +15,32 @@ jobs:
     permissions:
       contents: read
       packages: write
+    strategy:
+      matrix:
+        node-version: [16]
     steps:
       # 拉取github仓库代码
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: ${{ matrix.node-version }}
           # 设置发包npm地址仓库
           registry-url: https://registry.npmjs.org
       # 执行单条脚本
       - name: Run a one-line script
         run: echo Hello, world!
       - run: npm ci
+      # 安装依赖
+      # - name: Install dependencies 📦️
+      #   run: npm install
+      - name: Print Env 📄
+        run: |
+          echo "node"
+          node -v
+          echo "npm"
+          npm -v
+          echo "yarn"
+          yarn -v
       - run: npm publish
         env:
           # 刚刚设置的 NPM_TOKEN
