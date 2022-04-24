@@ -47,6 +47,18 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
+      # 设置环境变量
+      - name: Print a greeting
+        env:
+          MY_VAR: Hi there! My name is
+          FIRST_NAME: Mona
+          MIDDLE_NAME: The
+          LAST_NAME: Octocat
+        run: |
+          echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
+      # 使用条件判断
+      - if: ${{ env.MY_VAR != '' }}
+        run: echo 'This step will only run if the secret has a value set.'
       # - run: npm ci
       #  设定安装工具为 yarn
       # - name: Global install Yarn 🔨
