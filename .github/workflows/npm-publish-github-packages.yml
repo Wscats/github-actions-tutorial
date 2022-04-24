@@ -48,7 +48,7 @@ jobs:
           # 指定推送到的远程分支
           BRANCH: gh-pages
           # 指定构建之后的产物要推送哪个目录的代码
-          FOLDER: docs
+          FOLDER: build
       - name: Print Env 📄
         run: |
           echo "node"
