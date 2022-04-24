@@ -20,13 +20,15 @@ on:
     types: [created]
 
 # 权限
-permissions: write-all
+# permissions: write-all
 
+# 按顺序运行作业
 jobs:
   publish-gpr:
+    # 指定的运行器环境
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
     # 设置 node 版本
     strategy:
