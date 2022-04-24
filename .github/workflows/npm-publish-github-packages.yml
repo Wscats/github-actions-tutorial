@@ -24,6 +24,7 @@ jobs:
       # 执行单条脚本
       - name: Run a one-line script
         run: echo Hello, world!
+      - run: npm ci
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
