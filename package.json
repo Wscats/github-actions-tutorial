@@ -1,6 +1,6 @@
 {
   "name": "github-actions-tutorial",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
