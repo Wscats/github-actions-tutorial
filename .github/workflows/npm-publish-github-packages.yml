@@ -27,9 +27,9 @@ jobs:
   publish-gpr:
     # 指定的运行器环境
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      packages: write
+    # permissions:
+    #   contents: write
+    #   packages: write
     # 设置 node 版本
     strategy:
       matrix:
@@ -57,6 +57,7 @@ jobs:
         run: |
           echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
       # 使用条件判断
+      - name: Use if
       - if: ${{ env.MY_VAR != '' }}
         run: echo 'This step will only run if the secret has a value set.'
       # - run: npm ci
