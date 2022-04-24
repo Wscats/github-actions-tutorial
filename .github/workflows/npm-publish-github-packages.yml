@@ -15,21 +15,26 @@ jobs:
     permissions:
       contents: read
       packages: write
+    # 设置 node 版本
     strategy:
       matrix:
         node-version: [16]
     steps:
-      # 拉取github仓库代码
+      # 拉取 github 仓库代码
       - uses: actions/checkout@v3
+      # 设定 node 环境
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          # 设置发包npm地址仓库
+          # 设置发包 npm 地址仓库
           registry-url: https://registry.npmjs.org
       # 执行单条脚本
       - name: Run a one-line script
         run: echo Hello, world!
-      - run: npm ci
+      # - run: npm ci
+      #  设定安装工具为 yarn
+      # - name: Global install Yarn 🔨
+      #   run: npm install -g yarn
       # 安装依赖
       # - name: Install dependencies 📦️
       #   run: npm install
