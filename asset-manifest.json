@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/github-actions-tutorial/static/css/main.2cce8147.chunk.css",
+    "main.js": "/github-actions-tutorial/static/js/main.7e2f6e9e.chunk.js",
+    "main.js.map": "/github-actions-tutorial/static/js/main.7e2f6e9e.chunk.js.map",
+    "runtime-main.js": "/github-actions-tutorial/static/js/runtime-main.35d2f35c.js",
+    "runtime-main.js.map": "/github-actions-tutorial/static/js/runtime-main.35d2f35c.js.map",
+    "static/js/2.75a8962d.chunk.js": "/github-actions-tutorial/static/js/2.75a8962d.chunk.js",
+    "static/js/2.75a8962d.chunk.js.map": "/github-actions-tutorial/static/js/2.75a8962d.chunk.js.map",
+    "index.html": "/github-actions-tutorial/index.html",
+    "precache-manifest.9c1635af4d6437271d88c8fc9818bb80.js": "/github-actions-tutorial/precache-manifest.9c1635af4d6437271d88c8fc9818bb80.js",
+    "service-worker.js": "/github-actions-tutorial/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/github-actions-tutorial/static/css/main.2cce8147.chunk.css.map",
+    "static/js/2.75a8962d.chunk.js.LICENSE.txt": "/github-actions-tutorial/static/js/2.75a8962d.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/github-actions-tutorial/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35d2f35c.js",
+    "static/js/2.75a8962d.chunk.js",
+    "static/css/main.2cce8147.chunk.css",
+    "static/js/main.7e2f6e9e.chunk.js"
+  ]
+}
